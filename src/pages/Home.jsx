@@ -3,6 +3,7 @@ import HeroStar from '../assets/HeaderStar.png';
 import Hero from "../components/hero";
 import Header from "../components/header";
 import Chooseus from "../components/chooseus";
+import HowItWorkComponent from "../components/howItWorkComponent";
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
                     <Hero />
                     {/*<div className='h-[400px] bg-teal-200 absolute'> helooooo</div>*/}
                     <Chooseus />
+                    <HowItWorkComponent />
                 </section>
             </div>
 
