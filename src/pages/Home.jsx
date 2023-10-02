@@ -4,6 +4,7 @@ import Hero from "../components/hero";
 import Header from "../components/header";
 import Chooseus from "../components/chooseus";
 import HowItWorkComponent from "../components/howItWorkComponent";
+import FeelingConfident from "../components/feelingConfident";
 
 function Home() {
     return (
@@ -13,11 +14,12 @@ function Home() {
                     <img src={HeroStar} alt="hero star" className='absolute opacity-20' />
                 </div>
                 <Header />
-                <section className='absolute w-full h-[90%] '>
+                <section className='absolute left-0 w-full h-[90%] '>
                     <Hero />
                     {/*<div className='h-[400px] bg-teal-200 absolute'> helooooo</div>*/}
                     <Chooseus />
                     <HowItWorkComponent />
+                    <FeelingConfident />
                 </section>
             </div>
 
