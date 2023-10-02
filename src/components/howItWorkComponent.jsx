@@ -5,6 +5,7 @@ import CompareBoyImage from '../assets/ComparePlanImage.png'
 import HowItWorkCircle from '../assets/HowItWorklCircle.png';
 import UnderstandBenefitBG from '../assets/UnderstandBenefitsImage.png';
 import UnderstandBenefitComponent from "./understandBenefitComponent";
+import InformedChoice from "./informedChoice";
 
 function HowItWorkComponent() {
     return (
@@ -57,6 +58,8 @@ function HowItWorkComponent() {
                 </div>
             {/*  Understand area  */}
                 <UnderstandBenefitComponent />
+            {/*    Make Informed Choices area*/}
+                <InformedChoice />
             </div>
         </section>
     );
