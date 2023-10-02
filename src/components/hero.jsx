@@ -9,18 +9,18 @@ function Hero() {
     return (
         <section className='h-full w-full relative'>
             <div className='w-full h-full absolute'>
-                <div className='w-[100%] h-full flex px-28'>
+                <div className='w-[100%] h-full flex  sm:px-14 md:px-16 lg:px-20px xl:px-24 2xl:px-28'>
                 {/* left side */}
-                    <div className='w-[50%] h-full flex flex-col py-10 '>
+                    <div className='w-[50%] h-full flex flex-col  py-10 '>
                         <div className='bg-[#1363DF1A] flex gap-x-2 font-Jakarta font-semibold text-[#185A81] py-2 px-3 w-[350px] rounded-full'>
                             <img src={Fire} alt="fire" />
                             <p>#1 insurance Platform With 2M+ Users</p>
                         </div>
-                        <div className='w-full text-[#06283D] capitalize font-Jakarta text-[70px]'>
+                        <div className='w-full text-[#06283D] capitalize font-Jakarta sm:text-[30px] md:text-[30px] lg:text-[45px] xl:text-[50px] 2xl:text-[70px]'>
                             <h1 className='font-bold tracking-wide'>welcome to zemta <br />
                                 <span className='flex flex-col -my-5 -gap-y-3'>
                                     <h1>your Health Insurance</h1>
-                                    <div className='w-full flex justify-end px-44 -mt-4'><img src={HeadingLine} alt="Heading line" className='w-[400px]' /></div>
+                                    <div className='w-full flex justify-end px-44 md:-mt-2 xl:-mt-4'><img src={HeadingLine} alt="Heading line" className='w-[400px]' /></div>
                                 </span>
                                 made simple!”</h1>
                         </div>
@@ -33,8 +33,8 @@ function Hero() {
                             <button className='hidden sm:block rounded-[8px] bg-[#47A5DC] py-3 px-7 font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-black/40 shadow-2xl hover:shadow-black/50'>Get Started</button>
                         </div>
                     </div>
-                    <div className='w-[45%] h-full'>
-                        <img src={HeroRightSideImage} alt="Right side Image" />
+                    <div className='w-[45%] h-full border flex items-center'>
+                        <img src={HeroRightSideImage} alt="Right side Image" className='w-full border object-cover' />
                     </div>
 
                 </div>
