@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadingLine from "../assets/HeadingLine.png";
+import HeadingLine from "../assets/DarkHeadingLine.png";
 import UnderstandBenefitBG from "../assets/UnderstandBenefitsImage.png";
 
 function UnderstandBenefitComponent() {
@@ -15,7 +15,7 @@ function UnderstandBenefitComponent() {
                                 <div className='w-full'>
                                     <h1 className='text-[#06283D] tracking-wide text-[30px] font-bold sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px]'>Understand Benefits*</h1>
                                     <div className='w-full'>
-                                        <img src={HeadingLine} alt="Heading line" className='w-full h-[14px] lg:w-[100px] xl:w-[200px] 2xl:w-[400px]' />
+                                        <img src={HeadingLine} alt="Heading line" className='w-[200px] h-[14px] lg:w-[100px] xl:w-[200px] 2xl:w-[400px]' />
                                     </div>
                                 </div>
                                 <div className='w-full sm:w-[400px] text-[15px] sm:text-[18px] font-Jakarta text-[#06283D99] mt-3'>

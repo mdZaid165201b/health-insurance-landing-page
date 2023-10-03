@@ -10,7 +10,7 @@ import ComparePlans from "./comparePlans";
 
 function HowItWorkComponent() {
     return (
-        <section className='w-full relative  mb-0 sm:mb-14 bg-[#F8F8F8]'>
+        <section className='w-full relative -mt-5 mb-0  bg-[#F8F8F8]'>
             <div className='relative h-full'>
                 <div className='w-[200px] absolute z-50 hidden sm:block'>
                     <img src={StartBG} alt="Start Background" className='opacity-30' />
@@ -26,7 +26,7 @@ function HowItWorkComponent() {
                         </div>
                     </div>
                 </div>
-                <div className=' h-full w-[100%] px-5 sm:px-20 border border-red-500'>
+                <div className=' h-full w-[100%]  border border-red-500'>
                     <ComparePlans />
                 </div>
                 <UnderstandBenefitComponent />

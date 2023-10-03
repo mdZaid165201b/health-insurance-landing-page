@@ -6,7 +6,7 @@ import EyeIcon from '../assets/chooseUsEye.png'
 
 function Chooseus() {
     return (
-        <section className='w-full border-2 border-green-400 relative top-10 mb-14'>
+        <section className='w-full border-2 border-green-400 relative mb-14'>
             {/* Circle */}
             <div className='relative'>
                 <div className='w-[200px] absolute -z-50 hidden sm:block'>
@@ -22,8 +22,9 @@ function Chooseus() {
 
                         </div>
                         <div className='w-full text-center flex justify-center'>
-                            <div className='lg:w-[400px] xl:w-[350px] 2xl:w-[400px] px-2 sm:px-0'>
-                                <h1 className='font-Jakarta text-[15px] sm:text-[18px] text-[#06283D99]'>Why you should choose us in compare to the others platform now a days.</h1>
+                            {/*lg:w-[400px] xl:w-[350px] 2xl:w-[400px]*/}
+                            <div className='mt-2 px-2 sm:px-0'>
+                                <h1 className='font-Jakarta text-[15px] sm:text-[18px] text-[#06283D99]'>Discover the Reasons to Choose Hauora Health.</h1>
                             </div>
                         </div>
                     </div>

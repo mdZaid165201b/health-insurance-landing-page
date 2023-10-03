@@ -7,12 +7,12 @@ import HeroRightSideImage from '../assets/HeroRightImage.png';
 
 function Hero() {
     return (
-        <section className='h-full w-full relative'>
+        <section className='h-full w-full relative border border-green-950'>
             <div className='w-full h-full absolute'>
                 <div className='w-[100%] h-full flex flex-col sm:flex-row  sm:px-14 md:px-16 lg:px-20px xl:px-24 2xl:px-28'>
                 {/* left side */}
-                    <div className='w-full sm:w-[50%] h-full flex flex-col py-4  sm:py-10 '>
-                        <div className='w-full flex justify-center sm:justify-start'>
+                    <div className='w-full sm:w-[55%] h-full flex flex-col py-4  sm:py-10 '>
+                        <div className=' hidden w-full flex justify-center sm:justify-start'>
                             <div className='bg-[#1363DF1A] flex gap-x-2 font-Jakarta font-semibold text-[#185A81] py-2 px-3 w-[350px] rounded-full'>
                                 <img src={Fire} alt="fire" />
                                 <p>#1 insurance Platform With 2M+ Users</p>
@@ -22,7 +22,7 @@ function Hero() {
                             <h1 className='font-bold tracking-wide'>welcome to zemta <br />
                                 <span className='flex flex-col my-0 sm:-my-5  gap-y-0 sm:-gap-y-3'>
                                     <h1>your Health Insurance</h1>
-                                    <div className='w-full flex justify-end pr-7 sm:px-44 md:-mt-2 xl:-mt-4'><img src={HeadingLine} alt="Heading line" className='w-[150px] sm:w-[400px] border' /></div>
+                                    <div className='w-full flex justify-end pr-7 sm:px-44 md:-mt-2 xl:-mt-4'><img src={HeadingLine} alt="Heading line" className='w-[150px] sm:w-[400px]' /></div>
                                 </span>
                                 made simple!”</h1>
                         </div>
@@ -31,17 +31,15 @@ function Hero() {
                                 Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale
                             </h1>
                         </div>
-                        <div className=''>
-                            <button className='hidden sm:block rounded-[8px] bg-[#47A5DC] py-3 px-7 font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-black/40 shadow-2xl hover:shadow-black/50'>Get Started - It's Free!</button>
+                        <div className=' md:my-5 2xl:my-10'>
+                            <button className='w-[221px] h-[46px] hidden sm:block rounded-[8px] bg-[#47A5DC] font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-blue-400/100 shadow-2xl hover:shadow-black/50'>Get Started - It's Free!</button>
                         </div>
                     </div>
-                    <div className='w-full sm:w-[45%] h-[200px] sm:h-full flex items-center'>
-                        <img src={HeroRightSideImage} alt="Right side" className='w-full object-cover bg-clip-content' />
+                    <div className='w-full sm:w-[45%] h-[200px] sm:h-full flex justify-center border border-red-200 items-center'>
+                        <img src={HeroRightSideImage} alt="Right side" className='w-full ' />
                     </div>
                 </div>
-                <div className='relative sm:absolute bottom-0 h-[70px] sm:h-fit z-50 w-full'>
-                    <img src={HeroPattern} alt="Hero bottom pattern" className='h-full w-full' />
-                </div>
+
             </div>
         </section>
     );
