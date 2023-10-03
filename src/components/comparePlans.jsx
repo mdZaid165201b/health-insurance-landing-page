@@ -13,7 +13,7 @@ function ComparePlans() {
             <div className='w-full sm:w-[45%] py-5 sm:py-10 px-0 sm:px-20'>
                 <div className='relative flex flex-col justify-center items-center w-full h-full'>
                     <div className='flex flex-col w-full px-0'>
-                        <div className='w-full border '>
+                        <div className='w-full '>
                             <h1 className='text-[#06283D] tracking-wide text-[30px] font-bold sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px]'>Compare Plans*</h1>
                             <div className='w-full'>
                                 <img src={HeadingLine} alt="Heading line" className='w-[200px] h-[14px] lg:w-[100px] xl:w-[200px] 2xl:w-[400px]' />

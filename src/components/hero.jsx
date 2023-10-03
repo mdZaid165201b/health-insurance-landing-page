@@ -7,7 +7,7 @@ import HeroRightSideImage from '../assets/HeroRightImage.png';
 
 function Hero() {
     return (
-        <section className='h-full w-full relative border border-green-950'>
+        <section className='h-full w-full relative'>
             <div className='w-full h-full absolute'>
                 <div className='w-[100%] h-full flex flex-col sm:flex-row  sm:px-14 md:px-16 lg:px-20px xl:px-24 2xl:px-28'>
                 {/* left side */}
@@ -35,7 +35,7 @@ function Hero() {
                             <button className='w-[221px] h-[46px] hidden sm:block rounded-[8px] bg-[#47A5DC] font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-blue-400/100 shadow-2xl hover:shadow-black/50'>Get Started - It's Free!</button>
                         </div>
                     </div>
-                    <div className='w-full sm:w-[45%] h-[200px] sm:h-full flex justify-center border border-red-200 items-center'>
+                    <div className='w-full sm:w-[45%] h-[200px] sm:h-full flex justify-center items-center'>
                         <img src={HeroRightSideImage} alt="Right side" className='w-full ' />
                     </div>
                 </div>

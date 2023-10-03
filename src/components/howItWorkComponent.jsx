@@ -26,7 +26,7 @@ function HowItWorkComponent() {
                         </div>
                     </div>
                 </div>
-                <div className=' h-full w-[100%]  border border-red-500'>
+                <div className=' h-full w-[100%] '>
                     <ComparePlans />
                 </div>
                 <UnderstandBenefitComponent />

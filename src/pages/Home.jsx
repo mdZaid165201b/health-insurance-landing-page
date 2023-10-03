@@ -7,6 +7,7 @@ import HowItWorkComponent from "../components/howItWorkComponent";
 import FeelingConfident from "../components/feelingConfident";
 import HeroPattern from "../assets/HeroPattren.png";
 import Footer from "../components/footer";
+import FeatureComponent from "../components/featureComponent";
 
 function Home() {
     return (
@@ -24,6 +25,7 @@ function Home() {
                     {/*<div className='h-[400px] bg-teal-200 absolute'> helooooo</div>*/}
                     <Chooseus />
                     <HowItWorkComponent />
+                    <FeatureComponent />
                     <FeelingConfident />
                     <Footer />
                 </section>

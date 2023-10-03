@@ -6,14 +6,14 @@ import EyeIcon from '../assets/chooseUsEye.png'
 
 function Chooseus() {
     return (
-        <section className='w-full border-2 border-green-400 relative mb-14'>
+        <section className='w-full relative mb-14'>
             {/* Circle */}
             <div className='relative'>
                 <div className='w-[200px] absolute -z-50 hidden sm:block'>
                     <img src={GlowingCircle} alt="Glowing circle" />
                 </div>
                 <div className='w-full flex mt-16 sm:mt-0 justify-center'>
-                    <div className='border flex flex-col items-center'>
+                    <div className=' flex flex-col items-center'>
                         <div className='w-fit flex flex-col items-center'>
                             <h1 className='text-[#06283D] tracking-wide text-[30px] font-bold sm:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[64px]'>Why Choose Us?</h1>
                             <div className='w-full flex justify-end pr-2 sm:pr-10 -mt-0 sm:-mt-4'>
