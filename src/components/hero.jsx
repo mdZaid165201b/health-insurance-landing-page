@@ -32,7 +32,7 @@ function Hero() {
                             </h1>
                         </div>
                         <div className=' md:my-5 2xl:my-10'>
-                            <button className='w-[221px] h-[46px] hidden sm:block rounded-[8px] bg-[#47A5DC] font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-blue-400/100 shadow-2xl hover:shadow-black/50'>Get Started - It's Free!</button>
+                            <button className='w-[221px] h-[46px] py-7 hidden sm:flex justify-center items-center font-semibold rounded-[8px] bg-[#47A5DC] font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-blue-400/100 shadow-2xl hover:shadow-blue-500/70'>Get Started - It's Free!</button>
                         </div>
                     </div>
                     <div className='w-full sm:w-[45%] h-[200px] sm:h-full flex justify-center items-center'>
