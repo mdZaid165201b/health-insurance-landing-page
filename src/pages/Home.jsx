@@ -8,6 +8,7 @@ import FeelingConfident from "../components/feelingConfident";
 import HeroPattern from "../assets/HeroPattren.png";
 import Footer from "../components/footer";
 import FeatureComponent from "../components/featureComponent";
+import UserReviewsComponent from "../components/userReviewsComponent";
 
 function Home() {
     return (
@@ -26,6 +27,7 @@ function Home() {
                     <Chooseus />
                     <HowItWorkComponent />
                     <FeatureComponent />
+                    <UserReviewsComponent />
                     <FeelingConfident />
                     <Footer />
                 </section>

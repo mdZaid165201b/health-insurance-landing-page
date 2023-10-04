@@ -2,12 +2,12 @@ import React from 'react';
 import GlowingCircle from '../assets/ChooseUs Circle.png'
 import ConfidentRightImage from '../assets/ConfidentRightImage.png';
 import ConfidentRightSmallScreenBG from '../assets/ConfidentSmallScreenBG.png';
-import HeadingLine from "../assets/DarkHeadingLine.png";
+import HeadingLine from "../assets/HeadingLine.png";
 
 
 function FeelingConfident() {
     return (
-        <section className='w-full h-full sm:h-[600px] bg-[#47A5DC] relative'>
+        <section className='w-full h-full sm:h-[501px] bg-[#47A5DC] relative'>
             <div className='relative'>
                 <div className='w-[100px] absolute z-50 hidden sm:block'>
                     <img src={GlowingCircle} alt="Circle" />
@@ -23,8 +23,8 @@ function FeelingConfident() {
                         <img src={HeadingLine} alt="Heading line" className='w-[200px] h-[14px] lg:w-[100px] xl:w-[220px] 2xl:w-[300px] -mt-3' />
                         <p className='text-[16px] font-Jakarta'>Learn about how we got started and explore all our plans and insights</p>
                         <div className='w-full flex justify-center sm:justify-start gap-x-5 my-5'>
-                            <button className='rounded-[8px] bg-white  py-3 sm:py-4 px-4 text-[11px] sm:text-[14px] sm:px-14 font-Jakarta font-semibold text-black hover:bg-gray-100 duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl'>Explore Plans</button>
-                            <button className='rounded-[8px] bg-[#1D6996] py-3 sm:py-4 px-8 text-[11px] sm:text-[14px] sm:px-14 font-Jakarta  text-white hover:bg-[#1a5e87] duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl'>Learn more about us</button>
+                            <button className='w-[221px] h-[46px] py-4 sm:py-7 flex justify-center items-center rounded-[8px] bg-white text-black text-[14px] font-Jakarta font-semibold hover:bg-gray-100 duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl'>Explore Plans</button>
+                            <button className='w-[221px] h-[46px] py-4 sm:py-7 flex justify-center items-center rounded-[8px] bg-[#1D6996]  text-[14px] font-Jakarta font-medium text-white hover:bg-[#1a5e87] duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl'>Learn more about us</button>
                         </div>
                     </div>
                 </div>
