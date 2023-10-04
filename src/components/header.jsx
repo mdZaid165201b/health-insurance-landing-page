@@ -12,7 +12,7 @@ function Header() {
                     {/*  left side */}
                     <div className='flex items-center gap-x-10'>
                         {/*    Logo  */}
-                        <div className='flex items-center'>
+                        <div className='flex items-center cursor-pointer'>
                             <img src={Logo} alt="Logo" />
                             <h1 className='text-[16px] sm:text-[22px] text-[#06283D] font-bold font-Jakarta tracking-wide'>HAUOURA HEALTH</h1>
                         </div>
