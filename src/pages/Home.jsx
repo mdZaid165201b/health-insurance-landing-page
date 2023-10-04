@@ -12,7 +12,7 @@ import UserReviewsComponent from "../components/userReviewsComponent";
 
 function Home() {
     return (
-        <main className='w-screen h-screen border border-red-500 relative overflow-x-hidden'>
+        <main className='w-screen h-screen relative overflow-x-hidden'>
             <div className='absolute w-full h-full'>
                 <div className=' w-[300px] absolute hidden sm:block'>
                     <img src={HeroStar} alt="hero star" className='absolute opacity-20' />

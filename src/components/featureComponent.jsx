@@ -25,13 +25,13 @@ function FeatureComponent() {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-full sm:w-[60%] h-full sm:flex flex-col sm:flex-row justify-between  items-center p-10 hidden '>
+                        <div className='w-full sm:w-[60%] h-full sm:flex flex-col sm:flex-row justify-center  md:p-5 lg:p-7 xl:p-10 items-center   hidden '>
                             <Swiper
-                                spaceBetween={-200}
+                                spaceBetween={40}
                                 slidesPerView={2}
                                 onSlideChange={() => console.log('slide change')}
                                 onSwiper={(swiper) => console.log(swiper)}
-                                className='w-full h-full sm:flex  justify-center items-center hidden'
+                                className='w-full h-full sm:flex justify-between items-center hidden'
                             >
                                 <SwiperSlide className='w-full h-full sm:w-[330px] sm:h-[350px]'>
                                     <div className='w-full h-full sm:w-[330px] sm:h-[350px] bg-white shadow-[6px_6px_0px_0px_rgba(71,181,255,1)] rounded-[2px] flex items-center px-8'>
@@ -48,6 +48,7 @@ function FeatureComponent() {
                                         </div>
                                     </div>
                                 </SwiperSlide>
+                                
                                 <SwiperSlide className='w-[330px] h-[350px]'>
                                     <div className='w-[330px] h-[350px] bg-white shadow-[6px_6px_0px_0px_rgba(71,181,255,1)] rounded-[2px] flex items-center px-8'>
                                         <div className='w-full h-full flex flex-col items-center  gap-y-4 py-10'>
