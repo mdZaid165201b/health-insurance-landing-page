@@ -4,7 +4,20 @@ import PlanCamparsionIcon from '../assets/PlanCamparisonToolIcon.png';
 import JargonFreeIcon from '../assets/JaragonFreeIcon.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import FeatureDetailComponent from "../shared/featureDetailComponent";
 function FeatureComponent() {
+    const featuresData = [
+        {
+            icon: PlanCamparsionIcon,
+            title: 'Plan Comparison Tool',
+            detail: 'Easily compare insurance plans side by side to see what\'s covered and what\'s not.'
+        },
+        {
+            icon: JargonFreeIcon,
+            title: 'Jargon-Free Explanations',
+            detail: 'We break down insurance terms and jargon so you can understand your coverage.'
+        },
+    ];
     return (
         <section className='w-full z-50 h-fit sm:h-[585px] mb-10 relative '>
             {/*<div className='w-full h-full relative -z-50'>*/}
@@ -33,66 +46,34 @@ function FeatureComponent() {
                                 onSwiper={(swiper) => console.log(swiper)}
                                 className='w-full h-full sm:flex justify-between items-center hidden'
                             >
-                                <SwiperSlide className='w-full h-full sm:w-[330px] sm:h-[350px]'>
-                                    <div className='w-full h-full sm:w-[330px] sm:h-[350px] bg-white shadow-[6px_6px_0px_0px_rgba(71,181,255,1)] rounded-[2px] flex items-center px-8'>
-                                        <div className='w-full h-full flex flex-col items-center  gap-y-4 py-10'>
-                                            <div className='w-[60px] h-[60px] bg-[#47B5FF82] rounded-full flex items-center p-2 relative'>
-                                                <img src={PlanCamparsionIcon} alt="LanguageIcon" className='w-full p-2 h-full absolute left-5'/>
-                                            </div>
-                                            <div className='text-[22px] text-[#0B4C74]  font-bold'>
-                                                <h1>Plan Comparison Tool</h1>
-                                            </div>
-                                            <div className='w-full text-[#677B88] font-normal text-[14px] text-center font-Jakarta leading-[25px]'>
-                                                <p>Easily compare insurance plans side by side to see what's covered and what's not.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                
-                                <SwiperSlide className='w-[330px] h-[350px]'>
-                                    <div className='w-[330px] h-[350px] bg-white shadow-[6px_6px_0px_0px_rgba(71,181,255,1)] rounded-[2px] flex items-center px-8'>
-                                        <div className='w-full h-full flex flex-col items-center  gap-y-4 py-10'>
-                                            <div className='w-[60px] h-[60px] bg-[#47B5FF82] rounded-full flex items-center p-2 relative'>
-                                                <img src={JargonFreeIcon} alt="LanguageIcon" className='w-full p-2 h-full absolute top-2 left-5'/>
-                                            </div>
-                                            <div className='text-[22px] text-[#0B4C74]  font-bold'>
-                                                <h1>Jargon-Free Explanations</h1>
-                                            </div>
-                                            <div className='w-full text-[#677B88] font-normal text-[14px] text-center font-Jakarta leading-[25px]'>
-                                                <p>We break down insurance terms and jargon so you can understand your coverage.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
+                                {
+                                    featuresData.map((current, index) => (
+                                        <SwiperSlide className='w-full h-full sm:w-[330px] sm:h-[350px]'>
+                                            <FeatureDetailComponent icon={current.icon} title={current.title} detail={current.detail}/>
+                                        </SwiperSlide>
+                                    ))
+                                }
                             </Swiper>
                         </div>
                     <div className='w-full sm:w-[60%] h-full flex flex-col gap-y-5 justify-between  items-center p-5 sm:hidden '>
-                        <div className='w-full h-full sm:w-[330px] sm:h-[350px] bg-white shadow-[6px_6px_0px_0px_rgba(71,181,255,1)] rounded-[2px] flex items-center px-8'>
-                            <div className='w-full h-full flex flex-col items-center  gap-y-4 py-10'>
-                                <div className='w-[60px] h-[60px] bg-[#47B5FF82] rounded-full flex items-center p-2 relative'>
-                                    <img src={PlanCamparsionIcon} alt="LanguageIcon" className='w-full p-2 h-full absolute left-5'/>
+                        {
+                            featuresData.map((current, index) => (
+                                <div className='w-full h-full sm:w-[330px] sm:h-[350px] bg-white shadow-[6px_6px_0px_0px_rgba(71,181,255,1)] rounded-[2px] flex items-center px-8'>
+                                    <div className='w-full h-full flex flex-col items-center  gap-y-4 py-10'>
+                                        <div className='w-[60px] h-[60px] bg-[#47B5FF82] rounded-full flex items-center p-2 relative'>
+                                            <img src={current.icon} alt="LanguageIcon" className='w-full p-2 h-full absolute left-5'/>
+                                        </div>
+                                        <div className='text-[22px] text-[#0B4C74]  font-bold'>
+                                            <h1>{ current.title }</h1>
+                                        </div>
+                                        <div className='w-full text-[#677B88] font-normal text-[14px] text-center font-Jakarta leading-[25px]'>
+                                            <p>{ current.detail }</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className='text-[22px] text-[#0B4C74]  font-bold'>
-                                    <h1>Plan Comparison Tool</h1>
-                                </div>
-                                <div className='w-full text-[#677B88] font-normal text-[14px] text-center font-Jakarta leading-[25px]'>
-                                    <p>Easily compare insurance plans side by side to see what's covered and what's not.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='w-full h-full sm:w-[330px] sm:h-[350px] bg-white shadow-[6px_6px_0px_0px_rgba(71,181,255,1)] rounded-[2px] flex items-center px-8'>
-                            <div className='w-full h-full flex flex-col items-center  gap-y-4 py-10'>
-                                <div className='w-[60px] h-[60px] bg-[#47B5FF82] rounded-full flex items-center p-2 relative'>
-                                    <img src={PlanCamparsionIcon} alt="LanguageIcon" className='w-full p-2 h-full absolute left-5'/>
-                                </div>
-                                <div className='text-[22px] text-[#0B4C74]  font-bold'>
-                                    <h1>Plan Comparison Tool</h1>
-                                </div>
-                                <div className='w-full text-[#677B88] font-normal text-[14px] text-center font-Jakarta leading-[25px]'>
-                                    <p>Easily compare insurance plans side by side to see what's covered and what's not.</p>
-                                </div>
-                            </div>
-                        </div>
+                            ))
+                        }
+
                     </div>
                 </div>
             </div>
