@@ -106,7 +106,7 @@ function UserReviewsComponent() {
                             {
                                 Array.from({length: 10}).map((current, index) => (
                                     <SwiperSlide className='w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] py-4'>
-                                        <div className=' w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] rounded-[20px] shadow-[40px_20px_80px_0px_rgba(101,115,137,0.07)]  flex items-start px-8 -ml-4 sm:ml-8'>
+                                        <div className=' w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] rounded-[20px] shadow-[40px_20px_80px_0px_rgba(101,115,137,0.07)]  flex items-start px-8 ml-4 sm:ml-8'>
                                             <div className='flex flex-col  gap-y-4 h-full w-full py-10'>
                                                 <div className='flex gap-x-2'>
                                                     <div className='w-[64px] h-[64px] rounded-full '>
@@ -144,7 +144,7 @@ function UserReviewsComponent() {
                             {
                                 Array.from({length: 10}).map((current, index) => (
                                     <SwiperSlide className='w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] py-4'>
-                                        <div className=' w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] rounded-[20px] shadow-[40px_20px_80px_0px_rgba(101,115,137,0.07)]  flex items-start px-8 -ml-4 sm:-ml-16'>
+                                        <div className=' w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] rounded-[20px] shadow-[40px_20px_80px_0px_rgba(101,115,137,0.07)]  flex items-start px-8 ml-4 sm:-ml-16'>
                                             <div className='flex flex-col  gap-y-4 h-full w-full py-10'>
                                                 <div className='flex gap-x-2'>
                                                     <div className='w-[64px] h-[64px] rounded-full '>
