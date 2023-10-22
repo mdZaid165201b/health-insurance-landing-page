@@ -3,7 +3,7 @@ import GlowingCircle from '../assets/ChooseUs Circle.png';
 import HeadingLine from '../assets/HeadingLine.png';
 import LanguageIcon from '../assets/chooseUsLanguageIcon.png'
 import EyeIcon from '../assets/chooseUsEye.png'
-import ChooseUsComponent from "../shared/chooseUsComponent";
+import ChooseUsComponent from "../shared/ChooseUsComponent";
 
 function Chooseus() {
     const chooseusData = [
@@ -36,7 +36,7 @@ function Chooseus() {
                 <div className='w-full flex mt-16 sm:mt-0 justify-center'>
                     <div className=' flex flex-col items-center'>
                         <div className='w-fit flex flex-col items-center'>
-                            <h1 className='text-[#06283D] tracking-wide text-[30px] font-bold sm:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[64px]'>Why
+                            <h1 className='text-[#06283D] tracking-wide text-[30px] font-extrabold sm:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[64px]'>Why
                                 Choose Us?</h1>
                             <div className='w-full flex justify-end pr-2 sm:pr-10 -mt-0 sm:-mt-4'>
                                 <img src={HeadingLine} alt="Heading line"

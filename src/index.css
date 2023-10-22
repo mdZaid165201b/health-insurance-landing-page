@@ -15,3 +15,6 @@
 /*  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
 /*    monospace;*/
 /*}*/
+#customSwiperStyle {
+    width:320px !important
+}

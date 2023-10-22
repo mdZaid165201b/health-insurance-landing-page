@@ -72,8 +72,8 @@ function UserReviewsComponent() {
         <section className='w-full flex flex-col'>
             <div className='flex flex-col  w-full h-full'>
                 <div className='px-4 sm:px-48'>
-                    <div className='w-full sm:w-[500px] '>
-                        <h1 className='text-[#06283D] tracking-tight text-[40px] font-bold sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px]'>See What Our Users <span>
+                    <div className='w-full sm:w-[300px] xl:w-[400px] 2xl:w-[500px]'>
+                        <h1 className='text-[#06283D] tracking-tight text-[40px] font-extrabold sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px]'>See What Our Users <span>
                         <div className='w-full sm:flex justify-end px-10 -mb-6 hidden'>
                         <img src={HeadingLine} alt="Heading line" className='flex justify-end w-[200px] h-[14px] lg:w-[100px] xl:w-[200px] 2xl:w-[300px] -mt-3' />
                     </div>
@@ -91,29 +91,22 @@ function UserReviewsComponent() {
                         </button>
                     </div>
                 </div>
-                <div className='flex flex-col'>
-                    <div className='w-full flex gap-x-10  relative'>
-                        {/*{*/}
-                        {/*    Array.from({ length: 10 }).map((current, index) => {*/}
-                        {/*        return (*/}
-                        {/*            */}
-                        {/*        )*/}
-                        {/*    })*/}
-                        {/*}*/}
-                        <Swiper spaceBetween={isTabletOrMobile ? 40 : isDesktopOrLaptop ? 70 : 40}
+                <div className=''>
+                    <div className='w-full flex gap-x-2 '>
+                        <Swiper spaceBetween={isTabletOrMobile ? 20 : isDesktopOrLaptop ? 0 : 20}
                                 slidesPerView={userReviewsCount}
                                 loop={true}
                                 rewind={true}
                                 onSlideChange={() => console.log('slide change')}
                                 onSwiper={(swiper) => setSwiperOne(swiper)}
                                 navigation={true}
-                                className='w-full  flex gap-x-10 my-8 relative -left-1'
+                                className='w-full  flex gap-x-2  relative -left-1'
                                 noSwiping={true}
                         >
                             {
                                 Array.from({length: 10}).map((current, index) => (
-                                    <SwiperSlide className='w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px]'>
-                                        <div className='w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] rounded-[20px] shadow-[40px_20px_80px_0px_rgba(101,115,137,0.07)]  flex items-start px-8 -ml-4 sm:-ml-0'>
+                                    <SwiperSlide className='w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] py-4'>
+                                        <div className=' w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] rounded-[20px] shadow-[40px_20px_80px_0px_rgba(101,115,137,0.07)]  flex items-start px-8 -ml-4 sm:ml-8'>
                                             <div className='flex flex-col  gap-y-4 h-full w-full py-10'>
                                                 <div className='flex gap-x-2'>
                                                     <div className='w-[64px] h-[64px] rounded-full '>
@@ -127,7 +120,7 @@ function UserReviewsComponent() {
                                                 <div className='w-[160px]'>
                                                     <img src={RatingImg} alt="rating" />
                                                 </div>
-                                                <div className='w-full text-[#06283D] text-[16px] font-Jakarta leading-[28px]'>
+                                                <div className='w-full text-[#06283D]/50 text-[16px] font-Jakarta leading-[28px]'>
                                                     <p>“I value simplicity and this platform made health insurance a breeze.”</p>
                                                 </div>
                                             </div>
@@ -137,30 +130,21 @@ function UserReviewsComponent() {
                             }
                         </Swiper>
                     </div>
-                    <div className='w-full flex gap-x-10  relative'>
-                        {/*{*/}
-                        {/*    Array.from({ length: 10 }).map((current, index) => {*/}
-                        {/*        return (*/}
-                        {/*            */}
-                        {/*        )*/}
-                        {/*    })*/}
-                        {/*}*/}
-                        <Swiper spaceBetween={70}
+                    <div className='w-full flex gap-x-2 '>
+                        <Swiper spaceBetween={isTabletOrMobile ? 0 : isDesktopOrLaptop ? 0 : 20}
                                 slidesPerView={userReviewsCount}
                                 loop={true}
                                 rewind={true}
                                 onSlideChange={() => console.log('slide change')}
                                 onSwiper={(swiper) => setSwiperTwo(swiper)}
                                 navigation={true}
+                                className='w-full  flex gap-x-2  relative -left-1'
                                 noSwiping={true}
-                                noSwipingClass= 'swiper-slide'
-                                allowTouchMove={false}
-                                className='w-full  flex gap-x-10 my-8 relative -left-1 '
                         >
                             {
                                 Array.from({length: 10}).map((current, index) => (
-                                    <SwiperSlide className='w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px]'>
-                                        <div className=' w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] rounded-[20px] shadow-[40px_20px_80px_0px_rgba(101,115,137,0.07)]  flex items-start px-8 -ml-44 sm:-ml-32'>
+                                    <SwiperSlide className='w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] py-4'>
+                                        <div className=' w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] rounded-[20px] shadow-[40px_20px_80px_0px_rgba(101,115,137,0.07)]  flex items-start px-8 -ml-4 sm:-ml-16'>
                                             <div className='flex flex-col  gap-y-4 h-full w-full py-10'>
                                                 <div className='flex gap-x-2'>
                                                     <div className='w-[64px] h-[64px] rounded-full '>
@@ -174,7 +158,7 @@ function UserReviewsComponent() {
                                                 <div className='w-[160px]'>
                                                     <img src={RatingImg} alt="rating" />
                                                 </div>
-                                                <div className='w-full text-[#06283D] text-[16px] font-Jakarta leading-[28px]'>
+                                                <div className='w-full text-[#06283D]/50 text-[16px] font-Jakarta leading-[28px]'>
                                                     <p>“I value simplicity and this platform made health insurance a breeze.”</p>
                                                 </div>
                                             </div>

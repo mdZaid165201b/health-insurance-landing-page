@@ -1,14 +1,14 @@
 import React from 'react';
 import HeroStar from '../assets/HeaderStar.png';
-import Hero from "../components/hero";
-import Header from "../components/header";
-import Chooseus from "../components/chooseus";
-import HowItWorkComponent from "../components/howItWorkComponent";
-import FeelingConfident from "../components/feelingConfident";
+import Hero from "../components/Hero";
+import Header from "../components/Header";
+import Chooseus from "../components/Chooseus";
+import HowItWorkComponent from "../components/HowItWorkComponent";
+import FeelingConfident from "../components/FeelingConfident";
 import HeroPattern from "../assets/HeroPattren.png";
-import Footer from "../components/footer";
-import FeatureComponent from "../components/featureComponent";
-import UserReviewsComponent from "../components/userReviewsComponent";
+import Footer from "../components/Footer";
+import FeatureComponent from "../components/FeatureComponent";
+import UserReviewsComponent from "../components/UserReviewsComponent";
 
 function Home() {
     return (

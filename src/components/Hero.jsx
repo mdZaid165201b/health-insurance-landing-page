@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from "./header";
+import Header from "./Header";
 import HeroPattern from '../assets/HeroPattren.png';
 import Fire from '../assets/fire.png';
 import HeadingLine from '../assets/HeadingLine.png';
@@ -18,8 +18,8 @@ function Hero() {
                                 <p>#1 insurance Platform With 2M+ Users</p>
                             </div>
                         </div>
-                        <div className='w-full px-3 sm:px-0 text-[#06283D] capitalize font-Jakarta text-[30px] sm:text-[30px] md:text-[30px] lg:text-[45px] xl:text-[50px] 2xl:text-[70px]'>
-                            <h1 className='font-bold tracking-wide'>welcome to zemta <br />
+                        <div className='w-full px-3 sm:px-0 text-[#06283D] capitalize font-Jakarta font-extrabold text-[30px] sm:text-[30px] md:text-[30px] lg:text-[45px] xl:text-[50px] 2xl:text-[70px]'>
+                            <h1 className='font-extrabold tracking-wide'>welcome to zemta <br />
                                 <span className='flex flex-col my-0 sm:-my-5  gap-y-0 sm:-gap-y-3'>
                                     <h1>your Health Insurance</h1>
                                     <div className='w-full flex justify-end pr-7 sm:px-44 md:-mt-2 xl:-mt-4'><img src={HeadingLine} alt="Heading line" className='w-[150px] sm:w-[400px]' /></div>
